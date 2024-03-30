@@ -37,6 +37,6 @@ void int_sw0(void){
     digitalWrite(led1, 1);
 }
 
-void int_sw2(void){
+void int_sw1(void){
     digitalWrite(led1, 0);
 }
