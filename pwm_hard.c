@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <wiringPi.h>
 #include <softPwm.h> //ソフトウェア方式pwm
-#define led 2
+#define led 19
 
 int main(void){
     int i;
