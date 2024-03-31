@@ -5,8 +5,6 @@
 #define led 2
 
 int main(void){
-    int pwmRange = 100;
-    int initialValue = 0;
     int i;
     
     wiringPiSetupGpio();
@@ -14,8 +12,6 @@ int main(void){
     pwmSetClock(1200);
     pwmSetRange(100);
     pwmSetMode(PWM_MODE_MS);
-    pwmWrite(18, 50);
-    softPwmCreate(led, initialValue, pwmRange);
 
     while(1){
         for(i = 0; i < 100; i++){
